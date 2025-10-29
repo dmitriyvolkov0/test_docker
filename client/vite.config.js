@@ -4,4 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: ['dmitriyvolkov0-test-docker-2b3e.twc1.net'],
+  },
 })
