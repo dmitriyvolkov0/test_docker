@@ -4,7 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/frontend/',
   server: {
-    allowedHosts: ['dmitriyvolkov0-test-docker-2b3e.twc1.net'],
+    host: '0.0.0.0', // Для доступа из Docker
+    port: 5173,
+    allowedHosts: 'all',
   },
 })
