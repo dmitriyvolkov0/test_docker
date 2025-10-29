@@ -8,5 +8,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Для доступа из Docker
     port: 5173,
+    allowedHosts: 'all',
   },
 })
